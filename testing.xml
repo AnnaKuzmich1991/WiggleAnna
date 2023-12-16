@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="1" thread-count="2" parallel="tests">
+    <test name="Factory tests">
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name="com.stv.factory.factorytests.MainFactoryTest">
+                <methods>
+                    <include name="assertAccountIconIsDisplayed"/>
+                    <include name="assertLoginPageOpened"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
